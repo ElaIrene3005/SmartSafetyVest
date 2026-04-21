@@ -7,16 +7,14 @@ This repository contains the implementation of a **Smart Vest** designed for ind
 
 ## Project Structure
 ```
-├── detection_rtdetr/
-│   ├── dataset_tools/      # Scripts for splitting datasets and BBox counting
-│   ├── training/           # RT-DETR training pipelines
-│   └── optimization/       # INT8 Quantization and inference testing
-├── temporal_convlstm/
-│   ├── preprocessing/      # Frame cutting and sequence preparation
-│   ├── training/           # ConvLSTM model training
-│   └── conversion/         # FP32 model conversion and testing
-├── feedback_firmware/
-│   └── main.cpp            # C++ source for haptic actuator control
+├── RT-DETR/
+│   ├── code/      # Scripts for pre-processing, training, testing, and quantization
+│   ├── model/           # Model weight from training
+├── ConvLSTM/
+│   ├── code/      # Scripts for pre-processing, training, testing, and conversion
+│   ├── model/           # Model weight from training
+├── Feedback_System/
+│   └── main.cpp            # C++ source for haptic actuator control and LED feedback
 └── deployment/
     └── full_system.py      # Main integration script for Raspberry Pi
 
